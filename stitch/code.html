@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Manrope:wght@200..800&amp;family=Plus_Jakarta_Sans:wght@200..800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#6bcfff",
+              "on-tertiary-container": "#0e000a",
+              "surface-dim": "#0e0e13",
+              "error-dim": "#d73357",
+              "tertiary-dim": "#ff5dd7",
+              "surface-container-lowest": "#000000",
+              "on-primary": "#3e0086",
+              "surface-bright": "#2c2b34",
+              "surface-container": "#19191f",
+              "surface-variant": "#25252d",
+              "on-secondary-container": "#f1f9ff",
+              "secondary-dim": "#00b2eb",
+              "on-background": "#f9f5fd",
+              "tertiary-fixed-dim": "#ff6ad8",
+              "on-primary-fixed": "#000000",
+              "on-secondary-fixed-variant": "#005775",
+              "on-secondary": "#00374b",
+              "on-secondary-fixed": "#00394d",
+              "primary": "#c09cff",
+              "on-error-container": "#ffb2b9",
+              "on-primary-container": "#30006a",
+              "on-error": "#490013",
+              "outline": "#76747b",
+              "on-tertiary-fixed": "#34002a",
+              "on-tertiary": "#430036",
+              "inverse-primary": "#7926eb",
+              "primary-fixed": "#b58bff",
+              "tertiary-container": "#fe00d5",
+              "surface-container-low": "#131319",
+              "surface-container-highest": "#25252d",
+              "inverse-on-surface": "#55545b",
+              "outline-variant": "#48474d",
+              "surface-container-high": "#1f1f26",
+              "on-surface": "#f9f5fd",
+              "error-container": "#a70138",
+              "on-primary-fixed-variant": "#3b0081",
+              "tertiary-fixed": "#ff87db",
+              "on-tertiary-fixed-variant": "#6f005c",
+              "primary-fixed-dim": "#a978ff",
+              "secondary": "#00c1fd",
+              "inverse-surface": "#fcf8ff",
+              "error": "#ff6e84",
+              "primary-container": "#b58bff",
+              "surface-tint": "#c09cff",
+              "surface": "#0e0e13",
+              "background": "#0e0e13",
+              "tertiary": "#ff5dd7",
+              "on-surface-variant": "#acaab1",
+              "primary-dim": "#8f47ff",
+              "secondary-fixed": "#97daff",
+              "secondary-container": "#006688"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(25, 25, 31, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(192, 156, 255, 0.1);
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #c09cff 0%, #30006a 100%);
+        }
+        .glow-effect {
+            box-shadow: 0 0 40px -10px rgba(192, 156, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(138,63,252,0.08)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-[#f9f5fd] font-['Space_Grotesk']">
+                MOVIKA
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#f9f5fd]/70 hover:text-[#f9f5fd] transition-colors font-['Manrope']" href="#services">Services</a>
+<a class="text-[#f9f5fd]/70 hover:text-[#f9f5fd] transition-colors font-['Manrope']" href="#portfolio">Portfolio</a>
+<a class="text-[#f9f5fd]/70 hover:text-[#f9f5fd] transition-colors font-['Manrope']" href="#process">Process</a>
+<a class="text-[#f9f5fd]/70 hover:text-[#f9f5fd] transition-colors font-['Manrope']" href="#testimonials">Testimonials</a>
+</div>
+<button class="bg-primary text-on-primary-container px-6 py-2.5 rounded-full font-bold hover:scale-105 hover:opacity-90 transition-all duration-300 active:scale-95 font-['Manrope']">
+                Book a Call
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-8 overflow-hidden">
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -left-20 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-primary text-xs font-label uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        Now Editing for 2024
+                    </div>
+<h1 class="text-6xl md:text-8xl font-headline font-bold tracking-tighter leading-[0.9] text-on-background">
+                        High-quality <span class="text-transparent bg-clip-text kinetic-gradient">video</span> and design for everyone.
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-lg leading-relaxed">
+                        We merge technical precision with cinematic flair to help real estate professionals dominate their market through high-velocity content production.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="px-8 py-4 rounded-full kinetic-gradient text-on-primary-container font-bold text-lg hover:scale-105 transition-all glow-effect">
+                            Start Your Project
+                        </button>
+<button class="px-8 py-4 rounded-full glass-card text-on-background font-bold text-lg hover:bg-surface-container-highest transition-all">
+                            View Reel
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-[2rem] blur-2xl group-hover:opacity-100 transition duration-1000"></div>
+<div class="relative rounded-[2rem] overflow-hidden border border-outline-variant/20 shadow-2xl aspect-[4/5] lg:aspect-square">
+<img alt="High-end video editing workspace" class="w-full h-full object-cover" data-alt="Futuristic video editing workspace with multiple monitors and neon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr8TzXtmIJg78Ls5R7PYrHdkU5t66IUdqNzo8A81YGxZhQFyUil0FnYTL0_9vkJqO0oiEQlxWWepXWswhXgIE8dlSJAEXdz2OsSZgpqn8K_ooOKLr66af99ZDqA_UHzNqwSJ9aV5fSUEFisrQRoiBUUZhL-u-yI9AhNQwoMgGDuKXvrpdBAnLof1wsgBWI1wxVHgN8N5VztiL5scBAp7WS98A3XnEFnPCdNtNSyPTVwJgpv8dbYkfFUmPnRk_UbvvkOeiip71dnQr5"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-2xl">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-xs font-label text-primary uppercase tracking-tighter mb-1">Current Render</p>
+<h3 class="font-headline font-bold text-lg">Remotion Engine 4.0</h3>
+</div>
+<div class="w-12 h-12 rounded-full kinetic-gradient flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section (Bento Grid) -->
+<section class="py-24 px-8 bg-surface-container-low" id="services">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-6xl font-headline font-bold tracking-tight mb-4">Our Technical Arsenal</h2>
+<p class="text-on-surface-variant text-lg">We don't just use tools; we engineer experiences. From code-driven animation to pixel-perfect design.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Video Editing -->
+<div class="md:col-span-2 glass-card rounded-3xl p-8 flex flex-col justify-between min-h-[400px] hover:border-primary/40 transition-colors group">
+<div class="flex justify-between items-start">
+<div class="p-4 rounded-2xl bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-4xl">movie_filter</span>
+</div>
+<span class="text-xs font-label text-outline uppercase tracking-widest">Remotion · After Effects</span>
+</div>
+<div>
+<h3 class="text-3xl font-headline font-bold mb-4">Video Engineering</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">High-end video editing at scale. We use Remotion to create programmatic, data-driven videos that maintain cinematic quality across hundreds of variations.</p>
+</div>
+</div>
+<!-- Social Media Design -->
+<div class="bg-surface-container-highest rounded-3xl p-8 flex flex-col justify-between hover:bg-surface-bright transition-colors">
+<div class="p-4 rounded-2xl bg-secondary/10 text-secondary w-fit">
+<span class="material-symbols-outlined text-4xl">rebase_edit</span>
+</div>
+<div>
+<h3 class="text-2xl font-headline font-bold mb-2">Social Architecture</h3>
+<p class="text-on-surface-variant text-sm">Strategic layouts using Illustrator &amp; Photoshop tailored for high-engagement real estate feeds.</p>
+</div>
+</div>
+<!-- Poster Design -->
+<div class="bg-surface-container-high rounded-3xl p-8 flex flex-col justify-between border border-outline-variant/10">
+<div class="p-4 rounded-2xl bg-tertiary/10 text-tertiary w-fit">
+<span class="material-symbols-outlined text-4xl">gallery_thumbnail</span>
+</div>
+<div>
+<h3 class="text-2xl font-headline font-bold mb-2">Visual Identity</h3>
+<p class="text-on-surface-variant text-sm">Bespoke posters and marketing collateral that scream premium luxury at first glance.</p>
+</div>
+</div>
+<!-- Tech Stack -->
+<div class="md:col-span-2 bg-zinc-950 rounded-3xl p-8 flex items-center justify-between overflow-hidden relative">
+<div class="relative z-10">
+<h3 class="text-2xl font-headline font-bold mb-4">The Stack</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-lg bg-surface-container-high text-xs font-label">REMITION.JS</span>
+<span class="px-4 py-2 rounded-lg bg-surface-container-high text-xs font-label">ADOBE SUITE</span>
+<span class="px-4 py-2 rounded-lg bg-surface-container-high text-xs font-label">DA VINCI RESOLVE</span>
+<span class="px-4 py-2 rounded-lg bg-surface-container-high text-xs font-label">BLENDER</span>
+</div>
+</div>
+<div class="absolute -right-10 top-0 bottom-0 w-1/2 opacity-20 pointer-events-none">
+<img alt="Dynamic digital wave pattern" class="w-full h-full object-cover" data-alt="Vibrant abstract blue and purple digital energy wave" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiB6mAbvQFCycH33_el4yQ5lZOmxhnq-S4WbjxExLlOZ2FJWVp_BUsQ10vmQqFcqHLukHCGNkNJjk5zrYOrG7yT2WNtpQS2yhQ8rFoWnEB4iSFMT5qWIEpXxNYQLhd-NwpXjcHPQDK_Ou63C23oz1SiytqHxNsO-7pMIZi-fEisAo6KHZNPMshDg8i0BYjeyaqaYHx1eo0TFpIyW3WuU-4t0rRS-KVldmfbKgAxNZcCvLBRcpeDQNGOI2S4hSZaqIhLuAR3oSX9fWp"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Showcase -->
+<section class="py-24 px-8 overflow-hidden" id="portfolio">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-5xl font-headline font-bold mb-4">Latest Work</h2>
+<p class="text-on-surface-variant">Real estate results that defy the standard.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Featured Property Reel -->
+<div class="lg:col-span-7 group cursor-pointer">
+<div class="relative rounded-[2.5rem] overflow-hidden aspect-video shadow-2xl">
+<img alt="Luxury property showcase" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Cinematic wide shot of a luxury modern mansion at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA50L2ra8mvF3VsEhiJMbop65sKM7YSdcgTHHhsD8zp9JUNpjUhWA-dsMfpPT6xsol0_cFqXQv84MX8FiZmFQ_WNa88_TrlGgXd4U7ZkJjcr-bo8ZmnjsvEvxe5di3pLhlDeCgSL8igvx0ezClUZAWN0Mq5tI1xPImPmZNCiGnD9AoS4Fu2K6HGAiO5pKTCE34LUtN5qInV7Ppj4lpvLevjwS-90QE2dbKLeNx0oeij8XSwpc1MpVACbA-DMZE3wcGdyy_zdM88hxSL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-8 left-8">
+<span class="px-3 py-1 bg-primary text-on-primary-container rounded-full text-xs font-bold mb-3 inline-block">FEATURED REEL</span>
+<h3 class="text-3xl font-headline font-bold">The Obsidian Manor</h3>
+<p class="text-on-surface/70">Luxury Video Production · 2024</p>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full glass-card flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Vertical Content -->
+<div class="lg:col-span-5 grid grid-cols-2 gap-4">
+<div class="rounded-3xl bg-surface-container-high overflow-hidden relative aspect-[9/16] group">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
+<div class="w-full h-full bg-surface-variant flex items-center justify-center text-on-surface-variant italic">
+                                [Social Media Poster 1]
+                            </div>
+</div>
+<div class="rounded-3xl bg-surface-container-high overflow-hidden relative aspect-[9/16] group mt-8">
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
+<div class="w-full h-full bg-surface-variant flex items-center justify-center text-on-surface-variant italic">
+                                [Social Media Poster 2]
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 px-8 bg-surface-container-lowest" id="testimonials">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-1">
+<h2 class="text-4xl font-headline font-bold mb-6">What our partners say.</h2>
+<p class="text-on-surface-variant leading-relaxed">We focus on building long-term relationships with elite real estate agencies worldwide.</p>
+</div>
+<div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-8 glass-card rounded-3xl space-y-4">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface leading-relaxed italic">"Movika transformed our listing videos. The Remotion automation allowed us to scale from 2 listings a month to 20 without losing quality."</p>
+<div>
+<p class="font-bold">Marcus Thorne</p>
+<p class="text-xs text-on-surface-variant font-label uppercase">CEO, Prime Estates</p>
+</div>
+</div>
+<div class="p-8 bg-surface-container-high rounded-3xl space-y-4">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface leading-relaxed italic">"The speed and technical proficiency are unmatched. Their social media designs increased our click-through rate by 40%."</p>
+<div>
+<p class="font-bold">Elena Rodriguez</p>
+<p class="text-xs text-on-surface-variant font-label uppercase">Marketing Lead, LUXE Group</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto rounded-[3rem] kinetic-gradient p-12 md:p-24 text-center relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<div class="relative z-10 space-y-8">
+<h2 class="text-4xl md:text-7xl font-headline font-bold text-on-primary-container tracking-tighter">Ready to edit the future?</h2>
+<p class="text-on-primary-container/80 text-xl max-w-2xl mx-auto">Stop settling for standard templates. Get high-velocity, high-quality production today.</p>
+<button class="bg-on-primary-container text-primary px-10 py-5 rounded-full font-black text-xl hover:scale-105 transition-all shadow-xl">
+                        BOOK YOUR STRATEGY CALL
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#f9f5fd]/10 bg-zinc-950 dark:bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-7xl mx-auto">
+<div class="font-['Space_Grotesk'] font-bold text-[#f9f5fd] text-xl">
+                MOVIKA
+            </div>
+<div class="flex flex-wrap justify-center gap-8 font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
+<a class="text-zinc-500 hover:text-zinc-200 transition-all duration-200 underline decoration-[#c09cff] decoration-2 underline-offset-4" href="#">Instagram</a>
+<a class="text-zinc-500 hover:text-zinc-200 transition-all duration-200" href="#">LinkedIn</a>
+<a class="text-zinc-500 hover:text-zinc-200 transition-all duration-200" href="#">Vimeo</a>
+<a class="text-zinc-500 hover:text-zinc-200 transition-all duration-200" href="#">Terms</a>
+<a class="text-zinc-500 hover:text-zinc-200 transition-all duration-200" href="#">Privacy</a>
+</div>
+<p class="text-zinc-500 text-xs text-center md:text-right">
+                © 2024 MOVIKA Studio. Engineered for High-Velocity Real Estate.
+            </p>
+</div>
+</footer>
+</body></html>

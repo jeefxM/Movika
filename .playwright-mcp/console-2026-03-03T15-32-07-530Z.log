@@ -1,0 +1,3 @@
+[    3043ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap:0
+[    3966ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3001/favicon.ico:0
+[   33773ms] [ERROR] WebSocket connection to 'ws://localhost:3001/_next/webpack-hmr?id=Y9CB28J1BqZUxwvSuxrA6' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/_next/static/chunks/94563_next_dist_client_551cd8a3._.js:10878

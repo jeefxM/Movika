@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-headline: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Primary palette */
+  --color-primary: #c09cff;
+  --color-primary-dim: #8f47ff;
+  --color-primary-container: #b58bff;
+  --color-on-primary: #f9f5fd;
+  --color-on-primary-container: #f9f5fd;
+
+  /* Secondary */
+  --color-secondary: #00c1fd;
+  --color-secondary-dim: #00b2eb;
+
+  /* Tertiary */
+  --color-tertiary: #ff5dd7;
+  --color-tertiary-dim: #ff5dd7;
+
+  /* Error */
+  --color-error: #ff6e84;
+
+  /* Surfaces — boosted contrast */
+  --color-surface: #0e0e13;
+  --color-surface-dim: #0e0e13;
+  --color-surface-bright: #35343e;
+  --color-surface-container-lowest: #000000;
+  --color-surface-container-low: #141420;
+  --color-surface-container: #1a1a26;
+  --color-surface-container-high: #22222e;
+  --color-surface-container-highest: #2c2c38;
+  --color-surface-variant: #2c2c38;
+
+  /* On-surface */
+  --color-on-surface: #f9f5fd;
+  --color-on-surface-variant: #b5b3bb;
+  --color-on-background: #f9f5fd;
+
+  /* Outline */
+  --color-outline: #8a8890;
+  --color-outline-variant: #55536b;
+
+  /* Legacy compat */
+  --color-background: #0e0e13;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+}
+
+/* Utility classes for the design system */
+@layer utilities {
+  .glass-card {
+    background: rgba(30, 30, 42, 0.7);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(192, 156, 255, 0.12);
+  }
+
+  .kinetic-gradient {
+    background: linear-gradient(135deg, #c09cff 0%, #30006a 100%);
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 40px -10px rgba(192, 156, 255, 0.3);
+  }
+}
