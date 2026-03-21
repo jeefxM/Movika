@@ -74,7 +74,7 @@ export default function Hero() {
         className="relative min-h-[100dvh] flex items-center px-6 md:px-12 lg:px-20 overflow-hidden"
         style={{ perspective: "800px" }}
       >
-        <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* ── Left: Text Content ── */}
           <div className="text-left">
             {/* Label */}
@@ -151,8 +151,11 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* ── Right: 3D Visual ── */}
-          <div className="hero-visual relative hidden lg:block h-[520px] opacity-0">
+          {/* ── Right: Video player ── */}
+          <div
+            className="hero-visual relative opacity-0"
+            style={{ marginRight: "-6vw" }}
+          >
             <HeroVisual />
           </div>
         </div>
