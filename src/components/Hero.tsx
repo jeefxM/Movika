@@ -88,7 +88,7 @@ export default function Hero() {
 
             {/* Headline */}
             <h1
-              className="hero-heading text-[clamp(2.4rem,6vw,5.5rem)] font-headline font-bold tracking-[-0.03em] leading-[0.92] text-on-background"
+              className="hero-heading text-[clamp(1.8rem,3.8vw,3.5rem)] font-headline font-bold tracking-[-0.03em] leading-[0.95] text-on-background"
               style={{ perspective: "600px" }}
             >
               {t("line1")
@@ -101,7 +101,7 @@ export default function Hero() {
                     {word}
                   </span>
                 ))}
-              <br className="hidden sm:block" />
+              <br />
               {t("line2pre")
                 .split(" ")
                 .map((word, i) => (
@@ -111,7 +111,7 @@ export default function Hero() {
                   >
                     {word}
                   </span>
-                ))}{" "}
+                ))}
               <span
                 className="hero-word inline-block opacity-0 text-transparent bg-clip-text"
                 style={{

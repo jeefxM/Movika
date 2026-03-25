@@ -57,7 +57,7 @@ export default function Page() {
         {/* <div className="scroll-section"><HowItWorks /></div> */}
         {/* <div className="scroll-section"><Testimonials /></div> */}
         <div className="scroll-section"><Pricing /></div>
-        <div className="scroll-section"><Blog /></div>
+        {/* <div className="scroll-section"><Blog /></div> */}
         <div className="scroll-section"><FAQ /></div>
       </main>
 

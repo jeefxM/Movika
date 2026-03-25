@@ -52,7 +52,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link rel="icon" href="/movika_logo.png" type="image/png" />
         <OrganizationSchema />
         <LocalBusinessSchema />
         <ServiceSchema />
