@@ -18,15 +18,19 @@ export default function Footer() {
         <div className="flex flex-wrap justify-center gap-8 font-label text-sm tracking-wide">
           <a
             className="text-on-surface-variant hover:text-on-background transition-all duration-200 underline decoration-primary decoration-2 underline-offset-4"
-            href="#"
+            href="https://www.instagram.com/movika.ge/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Instagram
           </a>
-          <a className="text-on-surface-variant hover:text-on-background transition-all duration-200" href="#">
-            LinkedIn
-          </a>
-          <a className="text-on-surface-variant hover:text-on-background transition-all duration-200" href="#">
-            Vimeo
+          <a
+            className="text-on-surface-variant hover:text-on-background transition-all duration-200"
+            href="https://www.facebook.com/profile.php?id=61577516274718"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
           </a>
           <a className="text-on-surface-variant hover:text-on-background transition-all duration-200" href="#">
             {t("terms")}
