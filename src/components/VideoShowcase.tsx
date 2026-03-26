@@ -175,7 +175,7 @@ export default function VideoShowcase() {
                 {t("label")}
               </span>
             </div>
-            <h2 className="text-4xl md:text-6xl font-headline font-bold tracking-tight text-on-background">
+            <h2 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-on-background">
               {t("title")}
             </h2>
             <p className="text-on-surface-variant text-base md:text-lg mt-4 max-w-md leading-relaxed">

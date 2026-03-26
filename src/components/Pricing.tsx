@@ -5,9 +5,9 @@ import { Check } from "lucide-react";
 import { motion } from "motion/react";
 
 const tiers = [
-  { key: "tier1", featured: false, checkColor: "text-primary", features: 4 },
-  { key: "tier2", featured: false, checkColor: "text-secondary", features: 5 },
-  { key: "tier3", featured: true, checkColor: "text-tertiary", features: 5 },
+  { key: "tier1", featured: false, checkColor: "text-primary", features: 3 },
+  { key: "tier2", featured: false, checkColor: "text-secondary", features: 4 },
+  { key: "tier3", featured: true, checkColor: "text-tertiary", features: 4 },
 ] as const;
 
 export default function Pricing() {
@@ -46,7 +46,7 @@ export default function Pricing() {
             >
               {tier.featured && (
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 kinetic-gradient px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase text-on-primary-container">
-                  {t("tier3Badge")}
+                  {t(`${tier.key}Badge`)}
                 </div>
               )}
               <h3 className="text-2xl font-headline font-bold mb-2 text-on-background">

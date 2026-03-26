@@ -1,11 +1,3 @@
-"use client";
-
-import { Player } from "@remotion/player";
-import HeroComposition, {
-  HERO_DURATION,
-  HERO_FPS,
-} from "@/remotion/HeroComposition";
-
 export default function HeroVisual() {
   return (
     <div className="relative w-full">
@@ -19,7 +11,7 @@ export default function HeroVisual() {
         }}
       />
 
-      {/* Player wrapper */}
+      {/* Video wrapper */}
       <div
         className="relative w-full overflow-hidden rounded-xl"
         style={{
@@ -28,18 +20,15 @@ export default function HeroVisual() {
             "0 0 0 1px rgba(192,156,255,0.07), 0 32px 80px -16px rgba(0,0,0,0.55), 0 0 60px -20px rgba(143,71,255,0.2)",
         }}
       >
-        <Player
-          component={HeroComposition}
-          durationInFrames={HERO_DURATION}
-          fps={HERO_FPS}
-          compositionWidth={1280}
-          compositionHeight={720}
-          style={{ width: "100%", height: "100%", display: "block" }}
+        <video
+          className="w-full h-full object-cover"
           autoPlay
           loop
-          controls={false}
-          acknowledgeRemotionLicense
-        />
+          muted
+          playsInline
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
       </div>
 
       {/* Bottom corner accent glow */}
