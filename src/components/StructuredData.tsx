@@ -42,7 +42,7 @@ export function LocalBusinessSchema() {
       addressLocality: "Tbilisi",
       addressCountry: "GE",
     },
-    priceRange: "79₾ - 249₾",
+    priceRange: "20₾ - 250₾",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -104,25 +104,24 @@ export function ServiceSchema() {
       itemListElement: [
         {
           "@type": "Offer",
+          name: "Test Reel",
+          price: "0",
+          priceCurrency: "GEL",
+          description: "1 free test reel with 1 revision and fast delivery",
+        },
+        {
+          "@type": "Offer",
           name: "5 Reels",
-          price: "79",
+          price: "80",
           priceCurrency: "GEL",
-          description: "5 property reels with delivery in 48 hours",
+          description: "5 property reels with 1 revision and fast delivery",
         },
         {
           "@type": "Offer",
-          name: "15 Reels",
-          price: "149",
+          name: "20 Reels",
+          price: "250",
           priceCurrency: "GEL",
-          description: "15 property reels per month with priority delivery",
-        },
-        {
-          "@type": "Offer",
-          name: "30 Reels",
-          price: "249",
-          priceCurrency: "GEL",
-          description:
-            "30 property reels per month with full social media management",
+          description: "20 property reels per month with fast delivery",
         },
       ],
     },

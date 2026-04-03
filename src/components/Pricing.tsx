@@ -10,6 +10,13 @@ const tiers = [
   { key: "tier3", featured: true, checkColor: "text-tertiary", features: 4 },
 ] as const;
 
+const alacarteItems = [
+  { key: "alacarte1" },
+  { key: "alacarte2" },
+  { key: "alacarte3" },
+  { key: "alacarte4" },
+] as const;
+
 export default function Pricing() {
   const t = useTranslations("Pricing");
 
@@ -53,17 +60,11 @@ export default function Pricing() {
                 {t(`${tier.key}Name`)}
               </h3>
               <div className="text-4xl font-black mb-1 text-on-background font-headline">
-                {t.has(`${tier.key}OldPrice`) && (
-                  <span className="text-xl text-on-surface-variant/40 font-normal line-through mr-2">
-                    {t(`${tier.key}OldPrice`)} {t("currency")}
-                  </span>
-                )}
                 {t(`${tier.key}Price`)} {t("currency")}{" "}
                 <span className="text-lg text-on-surface-variant font-normal font-body">
                   / {t(`${tier.key}Period`)}
                 </span>
               </div>
-              {/* Per-reel price anchor */}
               <div className="text-sm text-primary/70 font-label mb-4">
                 {t(`${tier.key}PerUnit`)}
               </div>
@@ -91,6 +92,38 @@ export default function Pricing() {
             </motion.div>
           ))}
         </div>
+
+        {/* À la carte pricing */}
+        <motion.div
+          className="mt-16 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <h3 className="text-2xl font-headline font-bold text-center mb-8 text-on-background">
+            {t("alacarteTitle")}
+          </h3>
+          <div className="bg-surface-container-high border border-outline-variant/10 rounded-3xl p-8">
+            <div className="divide-y divide-outline-variant/10">
+              {alacarteItems.map((item, i) => (
+                <motion.div
+                  key={item.key}
+                  className="flex items-center justify-between py-4 first:pt-0 last:pb-0"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.3 + i * 0.08 }}
+                >
+                  <span className="text-on-background text-lg">{t(item.key)}</span>
+                  <span className="text-on-background font-headline font-bold text-xl">
+                    {t(`${item.key}Price`)}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
 
         {/* Guarantee / trust */}
         <motion.p
